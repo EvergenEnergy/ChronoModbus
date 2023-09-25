@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "chronomodbus"
+version = "0.1.0"
+description = "An app that writes to a modbus slave based on a CSV list of metrics, respecting the time from the CSV"
+authors = ["Sebastian Machuca <sebastian.machuca@evergen.energy>"]
+license = "Apache License 2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pymodbus = "^3.2.2"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+pylint = "^2.17.4"
+pytest = "^7.3.1"
+flake8 = "^6.0.0"
+coveralls = "^3.3.1"
+freezegun = "^1.2.2"
+yamllint = "^1.32.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
